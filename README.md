@@ -17,5 +17,8 @@ Internationalization is determined by the end-user's browser settings (english o
 Contact info can be edited at the root home page. It is expected that this will never reach
 production - no secrets suppressed. Superuser credentials are below.
 
+HomePage: http://localhost:8000  
+AdminPage: http://localhost:8000/admin/
+
 Username: admin  
 Password: pass
