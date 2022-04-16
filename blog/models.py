@@ -13,6 +13,12 @@ class BlogIndexPage(Page):
         FieldPanel('intro', classname="full")
     ]
 
+    def get_context(self, request):
+        context = super().get_context(request)
+        blog_pages = self.get_children().live().order_by('-first_published_at')
+        context['blog_pages'] = blog_pages
+        return context
+
 
 class BlogPage(Page):
     date = models.DateField("Post date")
