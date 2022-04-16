@@ -16,3 +16,12 @@ try:
     from .local import *
 except ImportError:
     pass
+
+WEBPACK_LOADER = {
+  'DEFAULT': {
+    'CACHE': not DEBUG,
+    'STATS_FILE': os.path.join(BASE_DIR, 'webpack/webpack-stats.json'),
+    'POLL_INTERVAL': 0.1,
+    'IGNORE': [r'.+\.hot-update.js', r'.+\.map'],
+  }
+}

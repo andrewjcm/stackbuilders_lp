@@ -33,3 +33,4 @@ coverage/
 *.cache
 *.eslintcache
 *package-lock.json
+/webpack/webpack-stats.json
