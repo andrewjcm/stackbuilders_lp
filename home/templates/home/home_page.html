@@ -46,6 +46,29 @@
             </div>
         </section>
     </div>
+        <div class="info-section p-5">
+        <section class="container ">
+            <div class="mb-4 lh-sm fs-1"><h3><b>{% trans "Latest Blog Posts" %}</b></h3></div>
+            <div class="row">
+                <div class="col">
+                    <div class="card-deck">
+                        {% for blog in page.get_recent_blog_posts %}
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">{{ blog.title }}</h5>
+                              <p class="card-text">{{ blog.intro }}</p>
+                                <p><a href="{% pageurl blog %}">{% trans "Read More" %}</a></p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">{{ blog.date }}</small>
+                            </div>
+                          </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <div class="bg-img-section info-section bg-sb-white background-center" style="background-image: url({% static '/images/Rectangle_1552377blue_bg.png' %});">
         <section class="container  py-4">
             <div class="px-xl-3 py-md-3">

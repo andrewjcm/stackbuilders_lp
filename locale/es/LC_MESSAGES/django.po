@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-16 11:32-0700\n"
+"POT-Creation-Date: 2022-04-16 12:18-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\blog\templates\blog\blog_index_page.html:19
+#: .\home\templates\home\home_page.html:60
 msgid "Read More"
 msgstr "Leer Mas"
 
@@ -36,7 +37,9 @@ msgstr "juntos"
 
 #: .\home\templates\home\home_page.html:14
 msgid "We deliver high-quality custom software built to make a difference."
-msgstr "Ofrecemos software personalizado de alta calidad creado para marcar la diferencia."
+msgstr ""
+"Ofrecemos software personalizado de alta calidad creado para marcar la "
+"diferencia."
 
 #: .\home\templates\home\home_page.html:16
 msgid "Contact us"
@@ -50,24 +53,30 @@ msgstr "Nos especializamos en lenguajes de programación funcional"
 msgid ""
 "Our experienced team incorporates those patterns to enhance every project "
 "and solution we build."
-msgstr "Nuestro experimentado equipo incorpora esos patrones para mejorar cada proyecto y solución que construimos."
+msgstr ""
+"Nuestro experimentado equipo incorpora esos patrones para mejorar cada "
+"proyecto y solución que construimos."
 
 #: .\home\templates\home\home_page.html:42
 msgid "Learn more about us"
 msgstr "Aprenda más acerca de nosotros"
 
-#: .\home\templates\home\home_page.html:62
+#: .\home\templates\home\home_page.html:51
+msgid "Latest Blog Posts"
+msgstr "Entradas Nuevas Del Blog"
+
+#: .\home\templates\home\home_page.html:85
 msgid "Join our team!"
 msgstr "¡Unete a nuestro equipo!"
 
-#: .\home\templates\home\home_page.html:63
+#: .\home\templates\home\home_page.html:86
 msgid "Grow your experience and launch your career with us."
 msgstr "Haz crecer tu experiencia y lanza tu carrera con nosotros."
 
-#: .\home\templates\home\home_page.html:66
+#: .\home\templates\home\home_page.html:89
 msgid "Check our open positions"
 msgstr "Consulta las oportunidades disponibles"
 
-#: .\home\templates\home\home_page.html:79
+#: .\home\templates\home\home_page.html:102
 msgid "Contact Info"
 msgstr "Datos de contacto"
