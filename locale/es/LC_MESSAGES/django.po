@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-16 09:48-0700\n"
+"POT-Creation-Date: 2022-04-16 11:32-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,45 +18,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\home\templates\home\welcome_page.html:6
-msgid "Visit the Wagtail website"
-msgstr "Vistar la pagina web de Wagtail"
+#: .\blog\templates\blog\blog_index_page.html:19
+msgid "Read More"
+msgstr "Leer Mas"
 
-#: .\home\templates\home\welcome_page.html:15
-msgid "View the release notes"
-msgstr "Ver las notas"
+#: .\blog\templates\blog\blog_page.html:22
+msgid "Return to blog"
+msgstr "Volver al blog"
 
-#: .\home\templates\home\welcome_page.html:27
-msgid "Welcome to your new Wagtail site!"
-msgstr "Bienvenido a su nueva pagina web con Wagtail"
+#: .\home\templates\home\home_page.html:13
+msgid "Let’s build"
+msgstr "Vamos a construir"
 
-#: .\home\templates\home\welcome_page.html:28
+#: .\home\templates\home\home_page.html:13
+msgid "together"
+msgstr "juntos"
+
+#: .\home\templates\home\home_page.html:14
+msgid "We deliver high-quality custom software built to make a difference."
+msgstr "Ofrecemos software personalizado de alta calidad creado para marcar la diferencia."
+
+#: .\home\templates\home\home_page.html:16
+msgid "Contact us"
+msgstr "Contacta con nosotros"
+
+#: .\home\templates\home\home_page.html:38
+msgid "We specialize in functional programming languages"
+msgstr "Nos especializamos en lenguajes de programación funcional"
+
+#: .\home\templates\home\home_page.html:39
 msgid ""
-"Please feel free to <a href=\"https://github.com/wagtail/wagtail/wiki/Slack"
-"\">join our community on Slack</a>, or get started with one of the links "
-"below."
-msgstr ""
+"Our experienced team incorporates those patterns to enhance every project "
+"and solution we build."
+msgstr "Nuestro experimentado equipo incorpora esos patrones para mejorar cada proyecto y solución que construimos."
 
-#: .\home\templates\home\welcome_page.html:35
-msgid "Wagtail Documentation"
-msgstr "Documentacion de Wagtail"
+#: .\home\templates\home\home_page.html:42
+msgid "Learn more about us"
+msgstr "Aprenda más acerca de nosotros"
 
-#: .\home\templates\home\welcome_page.html:36
-msgid "Topics, references, & how-tos"
-msgstr "Como hacer"
+#: .\home\templates\home\home_page.html:62
+msgid "Join our team!"
+msgstr "¡Unete a nuestro equipo!"
 
-#: .\home\templates\home\welcome_page.html:42
-msgid "Tutorial"
-msgstr ""
+#: .\home\templates\home\home_page.html:63
+msgid "Grow your experience and launch your career with us."
+msgstr "Haz crecer tu experiencia y lanza tu carrera con nosotros."
 
-#: .\home\templates\home\welcome_page.html:43
-msgid "Build your first Wagtail site"
-msgstr "Haz tu primera pagina web con Wagtail"
+#: .\home\templates\home\home_page.html:66
+msgid "Check our open positions"
+msgstr "Consulta las oportunidades disponibles"
 
-#: .\home\templates\home\welcome_page.html:49
-msgid "Admin Interface"
-msgstr "Administracion"
-
-#: .\home\templates\home\welcome_page.html:50
-msgid "Create your superuser first!"
-msgstr "Crecer su primero usario-super "
+#: .\home\templates\home\home_page.html:79
+msgid "Contact Info"
+msgstr "Datos de contacto"
