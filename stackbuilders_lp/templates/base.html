@@ -1,4 +1,5 @@
 {% load static wagtailcore_tags wagtailuserbar %}
+{% load i18n wagtailcore_tags %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -17,23 +18,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/stackbuilders_lp.css' %}">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body>
+        <nav id="menu" class="top-nav navbar navbar-expand-lg fixed-top navbar-light bg-light shadow mx-4 mt-3">
+            <div class="container-md">
+                <a class="navbar-brand" href="/">
+                    <img src="{% static '/images/SB_Logo_BsgCyNY.svg' %}" alt="SB logo" height="60">
+                </a>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="{% slugurl 'blog' %}" class="nav-link
+                                mx-lg-3 mx-xl-4 text-nowrap">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
 
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/stackbuilders_lp.js' %}"></script>
-
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}
+
     </body>
 </html>

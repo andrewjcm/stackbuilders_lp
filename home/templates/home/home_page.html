@@ -1,21 +1,94 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block body_class %}template-homepage{% endblock %}
-
-{% block extra_css %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
+{% load i18n wagtailcore_tags %}
 
 {% block content %}
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
+<div class="container-fluid">
+    <div class="bg-img-section hero-section">
+        <section class="container py-4">
+            <div class="row g-0 justify-content-lg-end justify-content-center align-items-end">
+                <div class="col-md-6 col-12 mt-7 px-1">
+                    <div class="ps-lg-5 text-lg-start text-center">
+                        <h1 class="mb-4 lh-1"><p><b>{% trans "Let’s build" %}</b> <b><span class="text-sb-light-blue">{% trans "together" %}</span></b></p></h1>
+                        <div class="mb-5 pe-lg-6 sb-text"><p data-block-key="f89l9">{% trans "We deliver high-quality custom software built to make a difference." %}</p></div>
+                        <a href="#contact-section" class="btn btn-light-blue px-sm-4 py-sm-3 fs-5 fw-bold">
+                            {% trans "Contact us" %}
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-lg-block d-none landing-background overflow-hidden">
+                    <img src="{% static '/images/Home_page.png' %}"
+                        alt="We deliver high-quality custom software built to make a difference.">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="bg-img-section info-section">
+        <section class="container  py-4  ">
+            <div class="px-xl-3 py-md-3">
+                <div class="d-flex flex-column-reverse flex-md-row justify-content-center align-items-center px-lg-6 px-md-5 px-3 py-1">
+                    <div class="col-12 col-md-4 p-lg-5 p-3 text-center">
+                            <div class="block-image">
+                                <img src="{% static '/images/Group_491.png'%}" alt="Stack Builder's logo" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 p-lg-5 p-3 text-md-start text-center">
+                            <div class="mb-4 lh-sm fs-1"><h3><b>{% trans "We specialize in functional programming languages" %}</b></h3></div>
+                            <div class="mb-4 sb-text "><p>{% trans "Our experienced team incorporates those patterns to enhance every project and solution we build." %}</p></div>
+
+                            <a href="https://www.stackbuilders.com/about-us/" class="btn btn-primary px-sm-4 py-sm-3 fs-5 fw-bold">
+                                {% trans "Learn more about us" %}
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="bg-img-section info-section bg-sb-white background-center" style="background-image: url({% static '/images/Rectangle_1552377blue_bg.png' %});">
+        <section class="container  py-4">
+            <div class="px-xl-3 py-md-3">
+                <div class="d-flex flex-column-reverse flex-md-row-reverse justify-content-center align-items-center px-lg-6 px-md-5 px-3 py-1">
+                    <div class="col-12 col-md-6 p-lg-5 p-3 text-center">
+
+                        <div class="block-image">
+                            <img src="{% static '/images/Group_7162.png' %}" alt="We are a great place to work. Join us." class="img-fluid">
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 p-lg-5 p-3 text-md-start text-center">
+
+                        <div class="mb-4 lh-sm fs-1"><h3 data-block-key="h33o6"><b><span class="text-sb-white">{% trans "Join our team!" %}</span></b></h3></div>
+                        <div class="mb-4 sb-text "><p data-block-key="wix2n"><span class="text-sb-white">{% trans "Grow your experience and launch your career with us." %}<br></span></p></div>
+
+                        <a href="https://www.stackbuilders.com/join-us/" class="btn btn-light px-sm-4 py-sm-3 fs-5 fw-bold">
+                            {% trans "Check our open positions" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="bg-img-section info-section">
+        <section class="container  py-4  ">
+            <div class="px-xl-3 py-md-3">
+                <div class="d-flex flex-column-reverse flex-md-row px-lg-6 px-md-5 px-3 py-1">
+
+                <div class="col-12 col-md-8 p-lg-5 p-3 text-md-start text-left">
+                    <div class="mb-4 lh-sm fs-1"><h3 ><b>{% trans "Contact Info" %}</b></h3></div>
+                    <div id="contact-section">
+                        <p><a href="mailto:info@stackbuilders.com">{{ page.contact_email }}</a></p>
+                        <p ></p>
+                        <p><b>{{ page.city }}, {{ page.country }}</b></p>
+                        <p>{{ page.phone }}</p>
+                        <p></p>
+                        <p>{{ page.address }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
 
 {% endblock content %}

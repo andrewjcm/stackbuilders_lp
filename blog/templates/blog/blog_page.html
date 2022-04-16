@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+{% load i18n wagtailcore_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+
+{% block content %}
+    <div class="container-fluid pt-8em">
+      <div class="card p-3">
+        <div class="card-header">
+            <h2>{{ page.title }}</h2>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <div class="intro">{{ page.intro }}</div>
+                {{ page.body|richtext }}
+            </div>
+        </div>
+        <small class="meta text-muted">{{ page.date }}</small>
+    </div>
+    <p class="pt-2"><a href="{{ page.get_parent.url }}">{% trans "Return to blog" %}</a></p>
+{% endblock %}

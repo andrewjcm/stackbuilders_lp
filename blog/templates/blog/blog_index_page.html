@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+{% load i18n wagtailcore_tags %}
+
+{% block body_class %}template-blogindexpage{% endblock %}
+
+{% block content %}
+    <div class="container-fluid pt-8em">
+        {% for post in page.get_children %}
+            <div class="card p-3">
+                <div class="card-header">
+                    <h2>{{ post.title }}</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        {{ post.specific.intro }}
+                    </p>
+                    <a href="{% pageurl post %}" class="btn btn-primary">{% trans "Read More" %}</a>
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
