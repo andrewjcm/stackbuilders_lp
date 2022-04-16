@@ -1,2 +1,20 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.pt-8em {
+    padding-top: 8em;
+}
+
+
+.text-sb-white {
+    color: white;
+}
+
+.text-sb-light-blue {
+    color: #4494d0;
+}
+
+.btn-light-blue {
+    color: white;
+    background-color: #4494d0;
+}
